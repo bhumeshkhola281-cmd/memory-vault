@@ -1,0 +1,30 @@
+{
+  "name": "memoryvault",
+  "version": "1.0.0",
+  "description": "Personal memories vault with upload & weekly reminders",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node --experimental-sqlite server/index.js",
+    "client": "npx vite",
+    "build": "npx vite build",
+    "start": "node --experimental-sqlite server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "multer": "^1.4.5-lts.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "uuid": "^11.0.0",
+    "node-cron": "^3.0.3",
+    "web-push": "^3.6.7",
+    "cors": "^2.8.5",
+    "vite": "^5.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}

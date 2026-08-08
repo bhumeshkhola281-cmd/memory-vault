@@ -1,0 +1,7 @@
+node_modules/
+dist/
+server/uploads/
+server/memoryvault.db
+server/vapid-keys.json
+.env
+.DS_Store
